@@ -1,0 +1,213 @@
+{
+  "packages/tui/src/component/prompt/autocomplete.tsx": [
+    ["return \"No matching commands\"", "return \"Нет подходящих команд\""],
+    ["return \"No matching directories\"", "return \"Нет подходящих папок\""],
+    ["return \"No matching files, agents, or references\"", "return \"Нет подходящих файлов, агентов или ссылок\""]
+  ],
+  "packages/tui/src/component/prompt/move.tsx": [
+    ["setProgress(\"Creating worktree\")", "setProgress(\"Создаю ворктри\")"],
+    ["setProgress(\"Creating session\")", "setProgress(\"Создаю сессию\")"],
+    ["setProgress(\"Submitting prompt\")", "setProgress(\"Отправляю запрос\")"]
+  ],
+  "packages/tui/src/component/command-palette.tsx": [
+    ["searchFooter: `Settings · ${setting.category}`,", "searchFooter: `Настройки · ${setting.category}`,"]
+  ],
+  "packages/tui/src/component/dialog-image-preview.tsx": [
+    ["`Image ${index() + 1}`", "`Изображение ${index() + 1}`"]
+  ],
+  "packages/tui/src/component/dialog-integration.tsx": [
+    ["? `Press ${shortcuts.get(\"dialog.integration.delete\")} again to confirm`", "? `Нажми ${shortcuts.get(\"dialog.integration.delete\")} ещё раз для подтверждения`"],
+    ["message: `Disconnected ${integration.name}` })", "message: `${integration.name} отключено` })"],
+    ["title={`Connect ${integration.name}`}", "title={`Подключить ${integration.name}`}"],
+    ["(method.label ?? \"API key\")", "(method.label ?? \"API-ключ\")"],
+    ["method.label ?? `Connect ${integration.name}`", "method.label ?? `Подключить ${integration.name}`"],
+    ["title={props.method.label ?? `Connect ${props.integration.name}`}", "title={props.method.label ?? `Подключить ${props.integration.name}`}"],
+    ["{store.text || \"Type your own answer\"}", "{store.text || \"Напиши свой ответ\"}"],
+    ["placeholder={props.field.placeholder ?? \"Type your own answer\"}", "placeholder={props.field.placeholder ?? \"Напиши свой ответ\"}"],
+    ["message: `Connected ${integration.name}` })", "message: `${integration.name} подключено` })"]
+  ],
+  "packages/tui/src/component/dialog-mcp.tsx": [
+    ["if (status === \"needs_auth\") return \"sign in\"", "if (status === \"needs_auth\") return \"войти\""],
+    ["title={`MCP server: ${server().name}`}", "title={`MCP-сервер: ${server().name}`}"]
+  ],
+  "packages/tui/src/component/dialog-model.tsx": [
+    ["if (!value) return \"Select model\"", "if (!value) return \"Выбери модель\""],
+    ["title: connected() ? \"Connect an integration\" : \"View all integrations\",", "title: connected() ? \"Подключить интеграцию\" : \"Все интеграции\","]
+  ],
+  "packages/tui/src/component/dialog-open.tsx": [
+    ["placeholder={projectID() ? \"Search worktrees…\" : \"Search sessions and projects…\"}", "placeholder={projectID() ? \"Искать ворктри…\" : \"Искать сессии и проекты…\"}"],
+    ["? \"Loading worktrees…\"\n", "? \"Загружаю ворктри…\"\n"],
+    [": \"No matching worktrees\"", ": \"Нет подходящих ворктри\""],
+    ["? \"Searching sessions and projects…\"", "? \"Ищу сессии и проекты…\""],
+    ["? `No matches · search all sessions with ${shortcuts.get(\"session.list\")}`", "? `Ничего не найдено · искать по всем сессиям: ${shortcuts.get(\"session.list\")}`"],
+    [": \"No matches\"}", ": \"Ничего не найдено\"}"],
+    ["busyText=\"Creating worktree…\"", "busyText=\"Создаю ворктри…\""]
+  ],
+  "packages/tui/src/component/dialog-session-list.tsx": [
+    ["return { message: query ? \"Searching sessions…\" : \"Loading sessions…\", error: false }", "return { message: query ? \"Ищу сессии…\" : \"Загружаю сессии…\", error: false }"],
+    ["message: query ? \"Could not search sessions. Change the search to try again.\" : \"Could not load sessions.\",", "message: query ? \"Не удалось найти сессии. Измени запрос и попробуй снова.\" : \"Не удалось загрузить сессии.\","],
+    ["return { message: query ? \"No sessions found\" : \"No sessions available\", error: false }", "return { message: query ? \"Сессии не найдены\" : \"Сессий пока нет\", error: false }"],
+    ["? `Press ${shortcuts.get(\"session.delete\")} again to confirm`", "? `Нажми ${shortcuts.get(\"session.delete\")} ещё раз для подтверждения`"],
+    ["title: allProjects() ? \"Show current directory sessions\" : \"Show all project sessions\",", "title: allProjects() ? \"Сессии текущей папки\" : \"Сессии всех проектов\","],
+    ["message: `Failed to delete session: ${errorMessage(error)}`,", "message: `Не удалось удалить сессию: ${errorMessage(error)}`,"],
+    ["{ title: allProjects() ? \"current directory\" : \"all projects\", label: \"ctrl+a\", side: \"right\" },", "{ title: allProjects() ? \"текущая папка\" : \"все проекты\", label: \"ctrl+a\", side: \"right\" },"]
+  ],
+  "packages/tui/src/component/dialog-session-rename.tsx": [
+    ["message: `Failed to rename session: ${errorMessage(error)}`,", "message: `Не удалось переименовать сессию: ${errorMessage(error)}`,"]
+  ],
+  "packages/tui/src/component/dialog-shell-output.tsx": [
+    ["if (info().status === \"timeout\") return \"Timed out\"", "if (info().status === \"timeout\") return \"Время истекло\""],
+    ["return info().exit === undefined ? \"Exited\" : `Exited · code ${info().exit}`", "return info().exit === undefined ? \"Завершено\" : `Завершено · код ${info().exit}`"],
+    ["? \"Loading output…\"", "? \"Загружаю вывод…\""],
+    [": \"No captured output. Output redirected to files is not shown here.\")}", ": \"Вывода нет. Вывод, перенаправленный в файлы, здесь не показывается.\")}"]
+  ],
+  "packages/tui/src/component/dialog-stash.tsx": [
+    ["if (seconds < 60) return \"just now\"", "if (seconds < 60) return \"только что\""],
+    ["? `Press ${shortcuts.get(\"stash.delete\")} again to confirm`", "? `Нажми ${shortcuts.get(\"stash.delete\")} ещё раз для подтверждения`"]
+  ],
+  "packages/tui/src/component/dialog-status.tsx": [
+    ["{(val) => `Needs authentication: ${val().error}`}", "{(val) => `Нужен вход: ${val().error}`}"]
+  ],
+  "packages/tui/src/component/dialog-variant.tsx": [
+    ["title={\"Select variant\"}", "title={\"Выбери вариант\"}"]
+  ],
+  "packages/tui/src/component/dialog-workspace-file-changes.tsx": [
+    ["{props.title ?? \"File Changes Found\"}", "{props.title ?? \"Найдены изменения в файлах\"}"],
+    ["{props.message ?? \"Do you want to move these changes with the session?\"}", "{props.message ?? \"Перенести эти изменения вместе с сессией?\"}"]
+  ],
+  "packages/tui/src/component/error-component.tsx": [
+    ["const message = props.error.message || \"An unknown error occurred.\"", "const message = props.error.message || \"Произошла неизвестная ошибка.\""],
+    ["const stack = props.error.stack || \"No stack trace available.\"", "const stack = props.error.stack || \"Стек вызовов недоступен.\""],
+    ["label: () => ({ idle: \"Copy report\", copied: \"✓ Copied\", failed: \"Copy failed\" })[copyState()],", "label: () => ({ idle: \"Копировать отчёт\", copied: \"✓ Скопировано\", failed: \"Не скопировано\" })[copyState()],"]
+  ],
+  "packages/tui/src/component/reconnecting.tsx": [
+    ["{props.managed ? \"Restarting service…\" : \"Connection lost…\"}", "{props.managed ? \"Перезапускаю сервис…\" : \"Соединение потеряно…\"}"],
+    ["? \"Your session will resume automatically.\"", "? \"Сессия продолжится автоматически.\""],
+    [": \"Reconnecting to the server automatically.\"}", ": \"Переподключаюсь к серверу автоматически.\"}"]
+  ],
+  "packages/tui/src/component/session-frame.tsx": [
+    ["title: rightPane() === \"sidebar\" ? \"Hide sidebar\" : \"Show sidebar\",", "title: rightPane() === \"sidebar\" ? \"Скрыть боковую панель\" : \"Показать боковую панель\","],
+    ["title: rightPane() === \"terminal\" ? \"Hide terminal pane\" : \"Show terminal pane\",", "title: rightPane() === \"terminal\" ? \"Скрыть панель терминала\" : \"Показать панель терминала\","]
+  ],
+  "packages/tui/src/component/session-tabs.tsx": [
+    ["\"Untitled session\"", "\"Сессия без названия\""]
+  ],
+  "packages/tui/src/component/startup-loading.tsx": [
+    ["(props.ready() ? \"Finishing startup…\" : \"Loading plugins…\")", "(props.ready() ? \"Завершаю запуск…\" : \"Загружаю плагины…\")"]
+  ],
+  "packages/tui/src/component/terminal-pane.tsx": [
+    ["setFailure(\"Terminal connection failed\")", "setFailure(\"Не удалось подключиться к терминалу\")"],
+    ["setFailure(\"Terminal disconnected\")", "setFailure(\"Терминал отключён\")"]
+  ],
+  "packages/tui/src/component/theme-error-toast.tsx": [
+    ["title: `Failed to load theme: ${name}`,", "title: `Не удалось загрузить тему: ${name}`,"]
+  ],
+  "packages/tui/src/context/local.tsx": [
+    ["message: `Agent not found: ${id}`,", "message: `Агент не найден: ${id}`,"],
+    ["provider: \"Connect a provider\",", "provider: \"Подключи провайдера\","],
+    ["model: \"No provider selected\",", "model: \"Провайдер не выбран\","]
+  ],
+  "packages/tui/src/context/session-tabs-model.ts": [
+    ["export const NEW_SESSION_TAB_TITLE = \"New session\"", "export const NEW_SESSION_TAB_TITLE = \"Новая сессия\""]
+  ],
+  "packages/tui/src/feature-plugins/system/diff-viewer-file-menu.tsx": [
+    ["(props.reviewed ? \"Mark incomplete\" : \"Mark complete\")", "(props.reviewed ? \"Снять отметку\" : \"Отметить просмотренным\")"]
+  ],
+  "packages/tui/src/feature-plugins/system/diff-viewer-image.tsx": [
+    ["{props.label ?? \"Working tree preview\"}", "{props.label ?? \"Превью рабочей копии\"}"]
+  ],
+  "packages/tui/src/feature-plugins/system/diff-viewer.tsx": [
+    ["return diff.error ? \"Diff unavailable\" : undefined", "return diff.error ? \"Изменения недоступны\" : undefined"],
+    ["if (mode() === \"working\") return \"vs HEAD\"", "if (mode() === \"working\") return \"относительно HEAD\""],
+    ["if (diff.error) return \"Base or diff unavailable\"", "if (diff.error) return \"База или изменения недоступны\""],
+    ["if (!result()) return \"Resolving diff…\"", "if (!result()) return \"Вычисляю изменения…\""],
+    ["if (!base) return \"Base not reported\"", "if (!base) return \"База не указана\""],
+    ["return `vs ${base.name}`", "return `относительно ${base.name}`"],
+    ["? \"Loading branches…\"", "? \"Загружаю ветки…\""],
+    [": \"No branches found\"}", ": \"Ветки не найдены\"}"],
+    [": \"No patch available for this file.\"}", ": \"Для этого файла нет патча.\"}"]
+  ],
+  "packages/tui/src/feature-plugins/system/notifications.ts": [
+    ["\"Session done\"", "\"Сессия завершена\""],
+    ["\"Input needs response\"", "\"Нужен ответ\""],
+    ["\"Permission needs input\"", "\"Нужно разрешение\""]
+  ],
+  "packages/tui/src/feature-plugins/system/plugins.tsx": [
+    ["message: `Failed to update plugin ${current.id}` })", "message: `Не удалось обновить плагин ${current.id}` })"],
+    ["title: checking() ? \"checking for updates\" : \"check for updates\",", "title: checking() ? \"проверяю обновления\" : \"проверить обновления\","],
+    ["...(outdated(entry) ? [\"update available\"] : []),", "...(outdated(entry) ? [\"есть обновление\"] : []),"]
+  ],
+  "packages/tui/src/plugin/context.tsx": [
+    ["title: `Plugin failed: ${state.target}`,", "title: `Ошибка плагина: ${state.target}`,"],
+    ["title: failed.length === 1 ? `Plugin failed: ${serverPluginName(first)}` : `${failed.length} plugins failed`,", "title: failed.length === 1 ? `Ошибка плагина: ${serverPluginName(first)}` : `Ошибки плагинов: ${failed.length}`,"],
+    ["+ \"Run /plugins to view details.\",", "+ \"Подробности — в /plugins.\","]
+  ],
+  "packages/tui/src/routes/session/composer/subagents-tab.tsx": [
+    ["label: `show ${filter.active ? \"inactive\" : \"active\"}`,", "label: `показать ${filter.active ? \"неактивных\" : \"активных\"}`,"],
+    ["fallback={<text fg={theme.text.muted}> No {filter.active ? \"active\" : \"inactive\"} subagents</text>}", "fallback={<text fg={theme.text.muted}> Нет {filter.active ? \"активных\" : \"неактивных\"} субагентов</text>}"],
+    ["? [{ label: \"interrupt\", shortcut:", "? [{ label: \"прервать\", shortcut:"]
+  ],
+  "packages/tui/src/routes/session/dialog-execute.tsx": [
+    ["if (state.status === \"streaming\") return \"Receiving code…\"", "if (state.status === \"streaming\") return \"Получаю код…\""],
+    ["(props.part.state.status === \"completed\" ? \"No output\" : \"Waiting for output…\")", "(props.part.state.status === \"completed\" ? \"Нет вывода\" : \"Жду вывод…\")"]
+  ],
+  "packages/tui/src/routes/session/form.tsx": [
+    ["if (minimum !== undefined) return `at least ${minimum}`", "if (minimum !== undefined) return `не меньше ${minimum}`"],
+    ["if (maximum !== undefined) return `at most ${maximum}`", "if (maximum !== undefined) return `не больше ${maximum}`"],
+    ["return \"Type your answer\"", "return \"Напиши ответ\""],
+    ["? \"I finished\" : \"open link\"", "? \"Готово\" : \"открыть ссылку\""],
+    ["`External action must be acknowledged: ${formLabel(unacknowledged)}`", "`Подтверди внешнее действие: ${formLabel(unacknowledged)}`"],
+    ["?? \"Invalid answer\")", "?? \"Неверный ответ\")"],
+    ["title: textual() ? \"Dismiss form\" : \"Close answer edit\",", "title: textual() ? \"Закрыть форму\" : \"Закрыть правку ответа\","],
+    ["? \"Confirm completion\"", "? \"Подтвердить выполнение\""],
+    [": \"Open link\",", ": \"Открыть ссылку\","],
+    ["title: `Select answer ${index + 1}`,", "title: `Выбрать ответ ${index + 1}`,"],
+    ["{confirm() ? \"Review\" : `Field ${Math.min(store.tab, fields().length - 1) + 1} of ${fields().length}`}", "{confirm() ? \"Проверка\" : `Поле ${Math.min(store.tab, fields().length - 1) + 1} из ${fields().length}`}"],
+    ["{input() || \"Type your own answer\"}", "{input() || \"Напиши свой ответ\"}"]
+  ],
+  "packages/tui/src/routes/session/location-missing.tsx": [
+    ["choicesLabel=\"Recovery actions\"", "choicesLabel=\"Варианты восстановления\""],
+    ["options={{ move: \"Choose directory\" }}", "options={{ move: \"Выбрать папку\" }}"]
+  ],
+  "packages/tui/src/ui/dialog-prompt.tsx": [
+    ["placeholder={props.placeholder ?? \"Enter text\"}", "placeholder={props.placeholder ?? \"Введи текст\"}"]
+  ],
+  "packages/tui/src/util/error.ts": [
+    ["`Model not found: ${field(model, \"providerID\")}/${field(model, \"modelID\")}`,", "`Модель не найдена: ${field(model, \"providerID\")}/${field(model, \"modelID\")}`,"],
+    ["\"Try: `opencode models` to list available models\",", "\"Список доступных моделей: `opencode models`\","],
+    ["return `Failed to initialize provider \"${field(provider, \"providerID\")}\". Check credentials and configuration.`", "return `Не удалось запустить провайдера «${field(provider, \"providerID\")}». Проверь ключи и настройки.`"],
+    ["return `Config file at ${field(json, \"path\")} is not valid JSON(C)`", "return `Файл настроек ${field(json, \"path\")} — некорректный JSON(C)`"],
+    ["`Configuration is invalid${path && path !== \"config\" ? ` at ${path}` : \"\"}`", "`Ошибка в настройках${path && path !== \"config\" ? ` в ${path}` : \"\"}`"],
+    ["return \"unknown error\"", "return \"неизвестная ошибка\""]
+  ],
+  "packages/tui/src/util/form.ts": [
+    ["return field.required ? \"Answer required\" : undefined", "return field.required ? \"Нужен ответ\" : undefined"],
+    ["return field.type === \"multiselect\" ? \"Select at least one option\" : \"Answer required\"", "return field.type === \"multiselect\" ? \"Выбери хотя бы один вариант\" : \"Нужен ответ\""],
+    ["return \"Expected text\"", "return \"Нужен текст\""],
+    ["return `Must be at least ${field.minLength} characters`", "return `Минимум символов: ${field.minLength}`"],
+    ["return `Must be at most ${field.maxLength} characters`", "return `Максимум символов: ${field.maxLength}`"],
+    ["return `Must match pattern: ${field.pattern}`", "return `Должно соответствовать шаблону: ${field.pattern}`"],
+    ["return `Invalid pattern: ${field.pattern}`", "return `Неверный шаблон: ${field.pattern}`"],
+    ["return \"Expected an email address\"", "return \"Нужен адрес электронной почты\""],
+    ["return \"Expected a URL\"", "return \"Нужна ссылка\""],
+    ["return \"Expected a date and time\"", "return \"Нужны дата и время\""],
+    ["return \"Select an available option\"", "return \"Выбери доступный вариант\""],
+    ["return \"Expected a number\"", "return \"Нужно число\""],
+    ["return \"Expected an integer\"", "return \"Нужно целое число\""],
+    ["return `Must be at least ${field.minimum}`", "return `Не меньше ${field.minimum}`"],
+    ["return `Must be at most ${field.maximum}`", "return `Не больше ${field.maximum}`"],
+    ["\"Expected yes or no\"", "\"Нужно «да» или «нет»\""],
+    ["return \"Expected selections\"", "return \"Нужно выбрать варианты\""],
+    ["return `Select at least ${field.minItems}`", "return `Выбери хотя бы ${field.minItems}`"],
+    ["return `Select at most ${field.maxItems}`", "return `Выбери не больше ${field.maxItems}`"],
+    ["return \"Select only available options\"", "return \"Выбирай только доступные варианты\""]
+  ],
+  "packages/tui/src/util/model.ts": [
+    ["return `Switched variant to ${model.variant ?? \"default\"}`", "return `Вариант модели: ${model.variant ?? \"по умолчанию\"}`"],
+    ["if (display === undefined) return `Switched model to ${formatRef(model)}`", "if (display === undefined) return `Модель сменена на ${formatRef(model)}`"],
+    ["return `Switched model to ${display}${variant}`", "return `Модель сменена на ${display}${variant}`"]
+  ],
+  "packages/tui/src/app.tsx": [
+    ["renderer.setTerminalTitle(`OC | ${", "renderer.setTerminalTitle(`VF | ${"]
+  ]
+}

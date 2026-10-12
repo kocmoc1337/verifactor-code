@@ -1,0 +1,11 @@
+{
+  "packages/tui/src/component/prompt/metadata.tsx": [
+    ["  variantAlpha: number\n}) {", "  variantAlpha: number\n  onAgentClick?: () => void\n  onModelClick?: () => void\n}) {"],
+    ["{(agent) => <text fg={fade(props.highlight, props.agentAlpha)}>{agent()}</text>}", "{(agent) => (\n            <text fg={fade(props.highlight, props.agentAlpha)} onMouseUp={() => props.onAgentClick?.()}>\n              {agent()}\n              <span style={{ fg: fade(theme.text.muted, props.agentAlpha) }}> ▾</span>\n            </text>\n          )}"],
+    ["          <box flexDirection=\"row\" gap={1} flexGrow={1} flexShrink={1} minWidth={0}>\n            <Show when={layout().agent}>", "          <box\n            flexDirection=\"row\"\n            gap={1}\n            flexGrow={1}\n            flexShrink={1}\n            minWidth={0}\n            onMouseUp={() => props.onModelClick?.()}\n          >\n            <Show when={layout().agent}>"],
+    ["                <text flexShrink={0} fg={fade(theme.text.muted, props.modelAlpha)}>\n                  {provider()}\n                </text>", "                <text flexShrink={0} fg={fade(theme.text.muted, props.modelAlpha)}>\n                  {provider()} ▾\n                </text>"]
+  ],
+  "packages/tui/src/component/prompt/index.tsx": [
+    ["                variantAlpha={variantMetaAlpha()}\n              />", "                variantAlpha={variantMetaAlpha()}\n                onAgentClick={() => keymap.dispatch(\"agent.list\")}\n                onModelClick={() => keymap.dispatch(\"model.list\")}\n              />"]
+  ]
+}

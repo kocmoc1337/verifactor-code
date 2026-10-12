@@ -1,0 +1,11 @@
+{
+  "packages/tui/src/util/locale.ts": [
+    ["return (num / 1000000).toFixed(1) + \"M\"", "return (num / 1000000).toFixed(1) + \" млн\""],
+    ["return (num / 1000).toFixed(1) + \"K\"", "return (num / 1000).toFixed(1) + \" тыс.\""],
+    ["return `${input}ms`", "return `${input} мс`"],
+    ["return `${(input / 1000).toFixed(1)}s`", "return `${(input / 1000).toFixed(1)} с`"],
+    ["return `${minutes}m ${seconds}s`", "return `${minutes} мин ${seconds} с`"],
+    ["return `${hours}h ${minutes}m`", "return `${hours} ч ${minutes} мин`"],
+    ["return `${days}d ${hours}h`", "return `${days} д ${hours} ч`"]
+  ]
+}

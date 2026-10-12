@@ -1,0 +1,17 @@
+{
+  "packages/tui/src/app.tsx": [
+    ["message: `Connect \"${server.name}\" to use its tools.`,", "message: `Подключи «${server.name}», чтобы пользоваться его инструментами.`,"],
+    ["title: `MCP server failed: ${server.name}`,", "title: `Ошибка MCP-сервера: ${server.name}`,"],
+    ["message: `Invalid model format: ${args.model}`,", "message: `Неверный формат модели: ${args.model}`,"],
+    ["title: `Switch to session in quick slot ${i + 1}`,", "title: `Перейти к сессии из быстрого слота ${i + 1}`,"],
+    ["title: `Switch to tab ${i + 1}`,", "title: `Перейти на вкладку ${i + 1}`,"],
+    ["title: mode() === \"dark\" ? \"Switch to light mode\" : \"Switch to dark mode\",", "title: mode() === \"dark\" ? \"Включить светлую тему\" : \"Включить тёмную тему\","],
+    ["title: locked() ? \"Unlock theme mode\" : \"Lock theme mode\",", "title: locked() ? \"Снять фиксацию режима темы\" : \"Зафиксировать режим темы\","],
+    ["title: terminalTitleEnabled() ? \"Disable terminal title\" : \"Enable terminal title\",", "title: terminalTitleEnabled() ? \"Не менять заголовок терминала\" : \"Менять заголовок терминала\","],
+    ["title: (config.data.animations ?? true) ? \"Disable animations\" : \"Enable animations\",", "title: (config.data.animations ?? true) ? \"Выключить анимации\" : \"Включить анимации\","],
+    ["title: (config.data.prompt?.editor ?? true) ? \"Disable file context\" : \"Enable file context\",", "title: (config.data.prompt?.editor ?? true) ? \"Выключить контекст файла\" : \"Включить контекст файла\","],
+    ["title: (config.data.diffs?.wrap ?? \"word\") === \"word\" ? \"Disable diff wrapping\" : \"Enable diff wrapping\",", "title: (config.data.diffs?.wrap ?? \"word\") === \"word\" ? \"Выключить перенос строк в изменениях\" : \"Включить перенос строк в изменениях\","],
+    ["title: pasteSummaryEnabled() ? \"Disable paste summary\" : \"Enable paste summary\",", "title: pasteSummaryEnabled() ? \"Вставлять текст целиком\" : \"Сворачивать большие вставки\","],
+    ["message: title ? `Session \"${title}\" was deleted` : \"The current session was deleted\",", "message: title ? `Сессия «${title}» удалена` : \"Текущая сессия удалена\","]
+  ]
+}

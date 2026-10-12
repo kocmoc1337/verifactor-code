@@ -1,0 +1,21 @@
+{
+  "commands": "команды",
+  "agents": "агенты",
+  "Search sessions": "Искать сессии",
+  "Refreshing": "Обновляю",
+  "OpenCode": "verifactor",
+  "OC | ": "VF | ",
+  "Working tree preview": "Превью рабочей копии",
+  "Loading image…": "Загружаю изображение…",
+  "Allow once": "Разрешить один раз",
+  "Always allow": "Всегда разрешать",
+  "Reject": "Отклонить",
+  "Untitled session": "Сессия без названия",
+  "New session": "Новая сессия",
+  "Loading output…": "Загружаю вывод…",
+  "Timed out": "Время истекло",
+  "Thinking": "Размышляет",
+  "Session done": "Сессия завершена",
+  "No matching commands": "Нет подходящих команд",
+  "exit shell mode": "выйти из режима shell"
+}

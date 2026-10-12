@@ -1,0 +1,23 @@
+{
+  "packages/tui/src/app.tsx": [["renderer.setTerminalTitle(\"OpenCode\")", "renderer.setTerminalTitle(\"verifactor\")"]],
+  "packages/tui/src/attention.ts": [["const DEFAULT_TITLE = \"OpenCode\"", "const DEFAULT_TITLE = \"verifactor\""]],
+  "packages/tui/src/mini/runtime.lifecycle.ts": [["return renderer.setTerminalTitle(\"OpenCode\")", "return renderer.setTerminalTitle(\"verifactor\")"]],
+  "packages/tui/src/component/terminal-pane.tsx": [["setFailure(\"Persistent terminal server is out of date; restart OpenCode\")", "setFailure(\"Сервер терминала устарел — перезапусти verifactor\")"]],
+  "packages/tui/src/component/error-component.tsx": [
+    ["            OpenCode crashed", "            verifactor упал"],
+    ["title=\" Stack trace \"", "title=\" Стек вызовов \""],
+    ["? \"Report copied — paste it into a new GitHub issue.\"", "? \"Отчёт скопирован — вставь его в новый issue на GitHub.\""],
+    ["? \"Clipboard write failed. Try again or report the crash manually.\"", "? \"Не удалось скопировать. Попробуй ещё раз или опиши сбой вручную.\""],
+    [": \"Copy the report and open a GitHub issue to help us fix this.\"}", ": \"Скопируй отчёт и создай issue на GitHub — это поможет исправить ошибку.\"}"],
+    ["<text fg={colors.muted}>OpenCode {app.version}</text>", "<text fg={colors.muted}>verifactor {app.version}</text>"]
+  ],
+  "packages/tui/src/component/dialog-update.tsx": [
+    ["title: bind === \"left\" || bind === \"shift+tab\" ? \"Previous update action\" : \"Next update action\",", "title: bind === \"left\" || bind === \"shift+tab\" ? \"Предыдущее действие\" : \"Следующее действие\","],
+    ["? \"Updating OpenCode\"", "? \"Обновляю verifactor\""],
+    ["? \"Update available\"", "? \"Доступно обновление\""],
+    [": \"Update\"}", ": \"Обновление\"}"],
+    ["An update is available. After installing, you'll be prompted to restart OpenCode.", "Доступно обновление. После установки нужно будет перезапустить verifactor."],
+    ["`Installing OpenCode ${current.version}…`", "`Устанавливаю verifactor ${current.version}…`"],
+    ["Update successful! A restart is required. Any active sessions will be resumed automatically.", "Обновление установлено! Нужен перезапуск, активные сессии продолжатся автоматически."]
+  ]
+}

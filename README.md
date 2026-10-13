@@ -30,7 +30,14 @@ bun install
 bun run dev
 ```
 
-На Windows можно запускать `bin\verifactor.cmd` из любой папки проекта, который хочешь открыть.
+На Windows (cmd) — в конце укажи папку проекта, который хочешь открыть:
+
+```bat
+set BUN_OPTIONS=--preload G:/projects/verifactor-code/packages/cli/node_modules/@opentui/solid/scripts/preload.js&& cd /d G:\projects\verifactor-code\packages\cli && bun src/index.ts "C:\путь\к\проекту"
+```
+
+`BUN_OPTIONS` нужен потому, что фоновый сервер стартует из папки проекта и не видит
+`packages/cli/bunfig.toml` с Solid-препроцессором JSX. Путь в нём — только с прямыми слэшами.
 
 ## Модели
 
